@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.ContactData;
 
@@ -8,9 +9,9 @@ import ru.stqa.pft.addressbook.model.ContactData;
  * Created by irina on 3/6/2016.
  */
 public class ContactHelper {
-    private FirefoxDriver wd;
+    private WebDriver wd;
 
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         this.wd = wd;
     }
 
