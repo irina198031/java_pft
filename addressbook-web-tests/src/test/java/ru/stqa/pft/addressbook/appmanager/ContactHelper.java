@@ -51,4 +51,17 @@ public class ContactHelper {
     public void submitContactModification() {
         wd.findElement(By.xpath("//div[@id='content']/form[1]/input[22]")).click();
     }
+
+    public void selectContact() {
+        wd.findElement(By.name("selected[]")).click();
+    }
+
+    public void deleteSelectedContacts() {
+        wd.findElement(By.xpath("//div[@id='content']/form[2]/div[2]/input")).click();
+
+    }
+
+    public void closeAlertWindow() {
+        wd.switchTo().alert().accept();
+    }
 }
