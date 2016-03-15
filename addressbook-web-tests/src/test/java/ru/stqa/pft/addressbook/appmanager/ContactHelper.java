@@ -43,4 +43,12 @@ public class ContactHelper {
         wd.findElement(By.name("address2")).clear();
         wd.findElement(By.name("address2")).sendKeys(contactData.getAddress2());
     }
+
+    public void initContactModification() {
+        wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img")).click();
+    }
+
+    public void submitContactModification() {
+        wd.findElement(By.xpath("//div[@id='content']/form[1]/input[22]")).click();
+    }
 }
