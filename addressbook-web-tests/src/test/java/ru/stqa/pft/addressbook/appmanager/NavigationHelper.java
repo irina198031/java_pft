@@ -23,9 +23,9 @@ public class NavigationHelper extends BaseHelper {
         click(By.linkText("groups"));
     }
 
-    public void goToContactPage() {
+    /*public void goToContactPage() {
         click(By.linkText("add new"));
-    }
+    }*/
 
     public void goToHomePage() {
         if(isElementPresent(By.id("maintable"))) {
